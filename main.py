@@ -20,7 +20,7 @@ gridfinity = Gridfinity(options)
 steps = gridfinity.generate()
 
 # hover the cursor over the lines in the plot to check xyz positions of the points in the design
-# fc.transform(steps, 'plot', fc.PlotControls(style='line', zoom=0.7))
+fc.transform(steps, 'plot', fc.PlotControls(style='line', zoom=0.7))
 
 # uncomment the next line to create a plot with real heights/widths for extruded lines to preview the real 3D printed geometry
 plot_controls = fc.PlotControls(
