@@ -462,7 +462,7 @@ class Gridfinity:
         fill.append(refx(arc1))
         return fill
 
-    def generate(self):
+    def generate(self, centerx, centery):
         initial_z = self.initial_z
         HEIGHT = self.HEIGHT
         EH = self.EH
@@ -550,7 +550,7 @@ class Gridfinity:
             side = not side
             n += 1
 
-        steps = fc.move(steps, fc.Vector(x=90, y=90, z=0), copy=False)
+        steps = fc.move(steps, fc.Vector(x=centerx, y=centery, z=0), copy=False)
 
         steps.append(fc.ManualGcode(text="G1 E-2.8 F2700"))
         return steps

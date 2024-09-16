@@ -16,7 +16,7 @@ options = {
 
 
 gridfinity = fc.Gridfinity(options)
-steps = gridfinity.generate()
+steps = gridfinity.generate(90, 90)
 
 # hover the cursor over the lines in the plot to check xyz positions of the points in the design
 # fc.transform(steps, 'plot', fc.PlotControls(style='line', zoom=0.7))
